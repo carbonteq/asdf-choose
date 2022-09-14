@@ -51,8 +51,8 @@ get_latest_version() {
 sanitize_version() {
   if [ "$version" = "latest" ]; then
     version=$(get_latest_version)
-    # else
-    # version="v$version"
+  else
+    version="v$version"
   fi
 
   echo "$version"
